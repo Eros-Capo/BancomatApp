@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Bancomat 2.0</string>
+    <string name="benvenuto_nel_bancomat">BENVENUTO NEL BANCOMAT</string>
+    <string name="iban">IBAN</string>
+    <string name="pin">PIN</string>
+    <string name="login">LOGIN</string>
+    <string name="non_hai_inserito_l_iban_o_la_password_validi">Non hai inserito l\'iban o la password validi</string>
+    <string name="title_activity_opzioni">OpzioniActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="logout">Logout</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

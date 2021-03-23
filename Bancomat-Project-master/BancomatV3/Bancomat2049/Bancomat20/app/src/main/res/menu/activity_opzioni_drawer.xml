@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/contoCorrente"
+            android:icon="@drawable/ic_account_balance_wallet_black_24dp"
+            android:title="Conto" />
+        <item
+            android:id="@+id/bonifico"
+            android:icon="@drawable/ic_account_balance_black_24dp"
+            android:title="Bonifico" />
+        <item
+            android:id="@+id/ricaricaCarta"
+            android:icon="@drawable/ic_payment"
+            android:title="Ricarica Carta" />
+        <item
+            android:id="@+id/ricaricaTelefono"
+            android:icon="@drawable/ic_smartphone"
+            android:title="Ricarica Telefono" />
+    </group>
+
+    <item android:title="Account">
+        <menu>
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"
+                android:title="Logout" />
+
+        </menu>
+    </item>
+
+</menu>

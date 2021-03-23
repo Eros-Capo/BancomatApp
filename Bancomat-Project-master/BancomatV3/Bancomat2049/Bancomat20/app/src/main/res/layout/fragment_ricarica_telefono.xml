@@ -1,0 +1,196 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yusby.bancomat20.ricarica_telefono">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:text="Compili tutti i campi per effettuare la ricarica"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/erroreTesto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView11"
+        android:layout_alignRight="@+id/textView11"
+        android:layout_below="@+id/textView11"
+        android:layout_marginTop="16dp"
+        android:text="Errore compila correttamente tutti i campi"
+        android:textAlignment="center"
+        android:textColor="?attr/colorError" />
+
+        <TextView
+            android:id="@+id/numeroTelefonoTesto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView11"
+            android:layout_alignStart="@+id/textView11"
+            android:layout_below="@+id/erroreTesto"
+            android:layout_marginTop="25dp"
+            android:text="Numero di Telefono"
+            android:textColor="@android:color/background_light" />
+
+        <EditText
+            android:id="@+id/numeroTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/numeroTelefonoTesto"
+            android:layout_alignStart="@+id/numeroTelefonoTesto"
+            android:layout_below="@+id/numeroTelefonoTesto"
+            android:ems="10"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/importoRicaricaTesto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/numeroTelefono"
+            android:layout_alignStart="@+id/numeroTelefono"
+            android:layout_below="@+id/numeroTelefono"
+            android:layout_marginTop="26dp"
+            android:text="Importo della Ricarica"
+            android:textColor="@android:color/background_light" />
+
+        <EditText
+            android:id="@+id/importoRicarica"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/importoRicaricaTesto"
+            android:layout_alignStart="@+id/importoRicaricaTesto"
+            android:layout_below="@+id/importoRicaricaTesto"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textColor="@android:color/background_light" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/importoRicarica"
+            android:layout_alignBottom="@+id/importoRicarica"
+            android:layout_toEndOf="@+id/importoRicarica"
+            android:layout_toRightOf="@+id/importoRicarica"
+            android:text="€"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/operatoreTelefonicoTesto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/importoRicarica"
+            android:layout_alignStart="@+id/importoRicarica"
+            android:layout_below="@+id/importoRicarica"
+            android:layout_marginTop="25dp"
+            android:text="Seleziona l'operatore telefonico"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/background_light"
+            android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/operatoreTelefonicoTesto"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <CheckBox
+            android:id="@+id/Vodafone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/operatoreTelefonicoTesto"
+            android:layout_alignStart="@+id/operatoreTelefonicoTesto"
+            android:layout_below="@+id/operatoreTelefonicoTesto"
+            android:layout_weight="1"
+            android:text="Vodafone"
+            android:textAlignment="viewStart" />
+
+        <CheckBox
+            android:id="@+id/Tim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Tim"
+            android:textAlignment="viewStart" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout4"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <CheckBox
+            android:id="@+id/Tre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Tre"
+            android:textAlignment="viewStart" />
+
+        <CheckBox
+            android:id="@+id/Wind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/linearLayout5"
+            android:layout_alignRight="@+id/linearLayout5"
+            android:layout_below="@+id/linearLayout4"
+            android:layout_weight="1"
+            android:text="Wind"
+            android:textAlignment="textStart" />
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/RicaricaTelefonoAvvia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/bg_login_button"
+            android:text="Ricarica Telefono"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/opConSucc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/RicaricaTelefonoAvvia"
+            android:layout_alignBottom="@+id/RicaricaTelefonoAvvia"
+            android:layout_centerHorizontal="true"
+            android:text="Operazione completata con successo"
+            android:textAlignment="center"
+            android:textColor="#2d9332"
+            android:textSize="16sp"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</FrameLayout>

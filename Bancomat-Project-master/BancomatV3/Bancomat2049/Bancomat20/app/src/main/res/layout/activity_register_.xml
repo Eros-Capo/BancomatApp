@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_test1"
+    android:padding="16dp"
+    tools:context="com.yusby.bancomat20.Register_Activity">
+
+
+    <Button
+        android:id="@+id/sign_Up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/bg_login_button"
+        android:text="Sign Up"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/testoErrore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="Errore non hai inserito parametri validi"
+        android:textAlignment="center"
+        android:textColor="?attr/colorError"
+        android:visibility="visible" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/bannerUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/testoErrore"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/Username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="start"
+            android:layout_marginTop="0dp"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:maxLength="27"
+            android:singleLine="true"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/banneremail"
+        android:layout_marginBottom="9dp"
+        android:layout_toStartOf="@+id/bannerUsername"
+        app:srcCompat="@drawable/ic_person_holo_24" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/banneremail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bannerUsername"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bannerUsername"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="start"
+            android:layout_marginTop="0dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textPersonName"
+            android:maxLength="27"
+            android:singleLine="true"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/banneremail"
+        android:layout_marginTop="20dp"
+        android:layout_toStartOf="@+id/banneremail"
+        app:srcCompat="@drawable/ic_email_white_28dp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/bannerpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/banneremail"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bannerUsername"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="start"
+            android:layout_marginTop="0dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPersonName"
+            android:maxLength="27"
+            android:singleLine="true"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bannnerChiaveDiSicurezza"
+        android:layout_marginBottom="9dp"
+        android:layout_toStartOf="@+id/bannerpassword"
+        app:srcCompat="@drawable/ic_lock_white_24dp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/bannnerChiaveDiSicurezza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bannerpassword"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/chiavedisicurezza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bannerpassword"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="start"
+            android:layout_marginTop="0dp"
+            android:ems="10"
+            android:hint="Chiave di sicurezza"
+            android:inputType="textPersonName"
+            android:maxLength="4"
+            android:singleLine="true"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bannnerChiaveDiSicurezza"
+        android:layout_marginBottom="9dp"
+        android:layout_toStartOf="@+id/bannnerChiaveDiSicurezza"
+        app:srcCompat="@drawable/ic_vpn_key_white_28dp" />
+
+
+
+
+
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        app:srcCompat="@mipmap/v4"
+        />
+
+
+
+</RelativeLayout>
